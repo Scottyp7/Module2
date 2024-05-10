@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Indexpage">
+    <meta keywords="Index">
+    <meta auther="Scott Parker">
+    <meta viewpoint="">
+
+    <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="flexbox.css">
+
+        <nav>
+            <!-- A link to another web page-->
+            <a target="_blank" href="form.html">Form Page</a>
+        </nav>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+    </style>
+
+    <h1 class ="style-me1">My HTML learning journey</h1>
+
+    <article>
+        <h2 class="style-me1" id ="style-me2">Learning elements - div, span, p, pre, ul, li, ol, article". Consider the difference between the page headline and article headline.</h2>
+
+
+
+    <div>HTML</div>
+        <span>HTML files are a good way of simply displaing information</span>
+        <p style="background-color: red;" height="150px" width="400">p represents paragraph     without preserving      spacing</p>
+            <p class="box" style="background-color: lightseagreen;">This is a child paragraph</p>
+        <pre class="boxsize">
+            Text in         a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both      spaces and
+            line breaks
+        </pre>
+            
+    <div>CSS</div>
+        <span>CSS is a used to create styles and format a webpage</span>
+    <div>Javascript</div><br>
+        <span class="textstyle">Javascript is a good way to create functionality for a webpage</span>
+        <!-- Ordered lists and Unordered Lists-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+     </ul>
+     <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+            <ol>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ol>
+     </ol>
+    </article>
+    <article>
+        <h2>Tables</h2>
+
+        <table>
+        <thead>
+    <tr>
+        <th colspan="2">First header</th>
+        <th>Second header</th>
+    </tr>
+    <tr>
+        <th class="fixedwidthcol">First header</th>
+        <th class="fluidcol">Second header</th>
+        <th rowspan="2">Rowspan header</th>
+    </tr>
+    <tr>
+        <th>header</th>
+        <th> header</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+        </tr>
+    </tbody>
+</table>
+</article>
+
+</head>
+
+<body>
+    <article class="art3">
+        <h2>The Third Article</h2>
+        <img class="position-sticky" src="https://picsum.photos/400/400" alt="" width="200" height="200" />
+        <img src="html_lab_image.jpg" alt="lab image" width="200" height="200"/>
+
+
+        <video class="position-relative" controls width="250" muted>
+        <source src="flower.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+        </video>
+<!-- make sure file names are correct. they do not need ./ locations when file is in same folder. chrome wont autoplay without muted being attached to the videos.-->
+        <audio controls src="t-rex-roar.mp3" muted>
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    </article>
+    <article>
+        <form>
+            <form method="POST" action="http://127.0.0.1:5500/form.html">
+        
+        <div><!-- text boxes-->
+            <label >First Name</label>
+            <input class="calc" type="text" name="firstname" value="First Name">
+        </div>
+        <div> 
+            <label>Second Name</label>
+            <input type="text" name="secondname" value="Second Name">
+        </div>
+
+        <div> <!--radio buttons-->
+            <h3>Select Your Favourite Coding Language</h6>
+            <label for="radio">Java</label>
+            <input type="radio" name="radio1" value="Java">
+            <label for="radio1">HTML</label>
+            <input type="radio" name="radio2" value="HTML">
+            <label for="radio2">CSS</label>
+            <input type="radio" name="radio3" value="CSS">
+        </div>
+
+        <div>  <!-- checkboxes-->
+            <h3> Select Your Favourite Car</h3>
+        <label for="car1">Car 1</label>
+        <input type="checkbox" name="car1" value="car1">
+        <label for="car2">Car 2</label>
+        <input type="checkbox" name="car2" value="car2">
+        <label for="car3">Car 3</label>
+        <input type="checkbox" name="car3" value="car3">
+        </div><br>
+
+        <div> <!-- drop down boxes-->
+            <select>
+                <h3>Select Your Favourite Car Make</h3>
+                <option>Car Make 1</option>
+                <option>Car Make 2</option>
+                <option>Car Make 3</option>
+            </select>
+        </div><br>
+
+        <button type="submit" name="submit">Click to Submit</button>
+
+        </form>
+    </article>
+
+    <main class="container">
+        <div class="child">
+            Home
+        </div>
+        <div class="child">
+            about us
+        </div>
+        <div class="child">
+            services
+        </div>
+        <div class="child">
+            faqs
+        </div>
+        <div class="child">
+            contact us
+        </div>
+    </main>
+</body>
+
+
+
+</html>

@@ -1,0 +1,84 @@
+:root {
+    --primary-background: rgb(224, 223, 223);
+    --secondary-background: darkgrey;
+}
+
+.div1 { /*myinfo - address, name ect */
+    border: 3px solid black;
+    background-color: lightblue;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.navigate { /*links with buttons at top */
+    display: inline-flex;
+    border: 3px solid black;
+    height: 30px;
+    width: calc(100vw - 30px);
+    justify-content: space-around;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 6px;
+    align-items: center;
+}
+button {
+    width: 13em;
+    border-radius: 6px;
+}
+
+.myinfo {
+    padding-left: 12px;
+}
+#main-aside {
+    flex-basis: 25%;
+}
+#main-content {
+    flex-basis: 70%;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*Media queries need to be placed below original css rules or they will be overwritten. */
+/* changes the direction the boxes are shown when screen size is smaller then 1050px */
+@media screen and (max-width:1050px){
+    #content-container {flex-direction: column;}
+    .navigate {height: fit-content;}
+}
+
+h1, h2, h3 { 
+    padding-left: 12px;
+}
+
+table td tr  { 
+    border: 3px solid black;
+    column-gap: 5px;
+}
+
+th {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px dotted black;
+    width: auto;
+}
+.aboutme, .jobhistory, .myhobbies { 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: var(--primary-background);
+}
+
+footer{
+    background-color: black;
+    color: gold;
+    border: 3px solid black;
+    border-radius: 6px;
+    text-align: center;
+    clear: both;
+    font-size: large;
+    height: fit-content;
+}
