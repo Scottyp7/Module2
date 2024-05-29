@@ -44,6 +44,7 @@ a {
 
 .flex-container {
     display: flex;
+
 }
 
 .flex-item-1{
@@ -52,17 +53,18 @@ a {
 }
 .flex-item-2{
     display: flex;
-    flex:2;
+    flex:1;
 }
 .flex-item-3{
     display: flex;
-    align-items: center;
-   flex:3;
+    flex:2;
 }
 .flex-item-4{
     display: flex;
-    flex:400px;
+    flex:4;
 }
+
+
 
 .flex-center{
     display:flex;
@@ -70,28 +72,41 @@ a {
     align-items: center;
 }
 
+
+
 .flex-space-between{
-    display: flexbox;
+    display: flex;
     justify-content: space-between
 }
 
+
+
 .flex-basis-item-50{
+    flex-wrap: auto;
     flex-basis: 50%;
+
+}
+.flex-wrap{
+    flex: auto;
+    flex-wrap:wrap;
+    justify-content: center;
+
 }
 
-.flex-wrap{
-    flex-wrap: wrap-reverse;
-}
+
 
 .flex-menu{
-margin-left: 5px;
-justify-content: space-evenly;
+
+    display: flex;
+    padding: 0px;
+
 }
-.background-3 {
-    list-style: none;
-    flex-basis: 100px;
-    padding: 1%;   
-    margin-left: 2px;
+.flex-menu li { 
+    list-style: none;    
+    text-align: center;
+    flex-grow: 1;
+}
 
-
+.fourth-item {
+    order: 12;
 }
